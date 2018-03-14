@@ -92,7 +92,7 @@ public class QuickSort
     }
 
 
-    //main method for testing
+    /*//main method for testing
     public static void main( String[] args )
     {
 
@@ -120,9 +120,9 @@ public class QuickSort
       qsort( arrN );
       System.out.println("arrN after sort: " );
       printArr(arrN);
-      /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
+     ~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
 
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       //get-it-up-and-running, static test case w/ dupes:
       int [] arr2 = {7,1,5,12,3,7};
@@ -149,9 +149,9 @@ public class QuickSort
       qsort( arrMatey );
       System.out.println("arrMatey after sort: " );
       printArr(arrMatey);
-            /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+      ~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    }//end main
+      }//end main*/
 
   }//end class QuickSort
