@@ -17,6 +17,29 @@ public class QuickSortTester{
 	return output;
     }
 
+    public static int[] generateSortedArray(int n) {
+	int output[] = new int[n];
+	for (int i = 0; i < n; i++) {
+	    output[i] = i;
+	}
+	return output;
+    }
+
+    public static int[] worstCaseGen(int n) {
+	int output[] = new int[n];
+	int dist = 1;
+	int i = n-2;
+	int mid = (n-1)/2;
+	output[mid] = n-1;
+        while ( i > -1 ) {
+	    output[mid - dist] = i;
+	    i--;
+	    if (i < 0) {break;}
+	    output[mid + dist] = i;
+	    dist++;
+	}
+    }
+
     public static void printArray( int[] array ) {
 	System.out.print("[");
 	for( int i = 0; i < array.length - 1; i++ )
@@ -41,14 +64,14 @@ public class QuickSortTester{
     }
 
     public static void main(String []args){
-	/*
+	
 	int[] arr = generateArray(100);
 
 	//Warmup
 	for (int i = 0; i < 100; i++) {
 	    QuickSort.qsort(arr);
 	}
-	*/
+	
 	System.out.println("size,time(nanoSeconds),timePerSize");
 	for( size = 1000; size <= 10000; size += 100 ){
 	    write();
