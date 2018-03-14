@@ -16,17 +16,10 @@ public class QuickSortTester{
 	}
 	return output;
     }
-
-    public static void printArray( int[] array ) {
-	System.out.print("[");
-	for( int i = 0; i < array.length - 1; i++ )
-	System.out.print( array[i] + ",");
-	System.out.println( array[(array.length - 1)] + "]");
-    }
     
     public static void addTime() {
+	arr = generateArray(size);
 	for(int i = 0; i < 10; i++ ){ // 10 trials
-	    arr = generateArray(size);
 	    double before = System.nanoTime();
 	    QuickSort.qsort(arr);
 	    totalTime += System.nanoTime()-before;
@@ -41,15 +34,14 @@ public class QuickSortTester{
     }
 
     public static void main(String []args){
-	/*
 	int[] arr = generateArray(100);
 
 	//Warmup
 	for (int i = 0; i < 100; i++) {
 	    QuickSort.qsort(arr);
 	}
-	*/
-	System.out.println("size,time(nanoSeconds),timePerSize");
+	
+	System.out.println("size,time,timePerSize");
 	for( size = 1000; size <= 10000; size += 100 ){
 	    write();
 	}
