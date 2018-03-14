@@ -38,6 +38,7 @@ public class QuickSortTester{
 	    output[mid + dist] = i;
 	    dist++;
 	}
+	return output;
     }
 
     public static void printArray( int[] array ) {
