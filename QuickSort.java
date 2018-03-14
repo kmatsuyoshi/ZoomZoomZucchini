@@ -1,7 +1,7 @@
 //Kayli Matsuyoshi, Kevin Lin, Victor Lin
 //APCS2 pd1
 //HW18 -- QuickSort
-//2018-03-13t
+//2018-03-15 R
 
 /*****************************************************
 * class QuickSort

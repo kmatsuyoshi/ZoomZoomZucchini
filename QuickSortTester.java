@@ -1,7 +1,7 @@
 //Zoom Zoom Zucchini - Kayli Matsuyoshi, Kevin Lin, Victor Lin
 //APCS2 --  pd1
 //Lab01 --  What Does the Data Say?
-//2018-03-14W
+//2018-03-15 R
 
 public class QuickSortTester{
 
@@ -39,13 +39,6 @@ public class QuickSortTester{
 	    dist++;
 	}
 	return output;
-    }
-
-    public static void printArray( int[] array ) {
-	System.out.print("[");
-	for( int i = 0; i < array.length - 1; i++ )
-	System.out.print( array[i] + ",");
-	System.out.println( array[(array.length - 1)] + "]");
     }
     
     public static void addTime() {
