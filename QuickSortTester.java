@@ -18,7 +18,7 @@ public class QuickSortTester{
     }
 
     public static int[] generateSortedArray(int n) {
-	int output[] = new int[n];
+    int output[] = new int[n];
 	for (int i = 0; i < n; i++) {
 	    output[i] = i;
 	}
@@ -31,7 +31,7 @@ public class QuickSortTester{
 	int i = n-2;
 	int mid = (n-1)/2;
 	output[mid] = n-1;
-        while ( i > -1 ) {
+        while ( i > -1 &&  dist < mid) {
 	    output[mid - dist] = i;
 	    i--;
 	    if (i < 0) {break;}
@@ -43,6 +43,8 @@ public class QuickSortTester{
     
     public static void addTime() {
 	arr = generateArray(size);
+	//arr = generateSortedArray(size);
+	//arr = worstCaseGen(size);
 	for(int i = 0; i < 10; i++ ){ // 10 trials
 	    double before = System.nanoTime();
 	    QuickSort.qsort(arr);
