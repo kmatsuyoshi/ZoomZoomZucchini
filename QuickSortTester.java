@@ -16,7 +16,7 @@ public class QuickSortTester{
 	}
 	return output;
     }
-
+    
     public static int[] generateSortedArray(int n) {
     int output[] = new int[n];
 	for (int i = 0; i < n; i++) {
@@ -38,6 +38,7 @@ public class QuickSortTester{
 	    output[mid + dist] = i;
 	    dist++;
 	}
+	printArr(output);
 	return output;
     }
     
@@ -70,7 +71,7 @@ public class QuickSortTester{
 	
 	System.out.println("size,time,timePerSize");
 	for( size = 1000; size <= 10000; size += 100 ){
-	    write();
+	     write();
 	}
 	
     } // end of main method
