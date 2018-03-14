@@ -16,7 +16,6 @@ public class QuickSortTester{
 	}
 	return output;
     }
-<<<<<<< HEAD
 
     public static int[] generateSortedArray(int n) {
 	int output[] = new int[n];
@@ -47,8 +46,6 @@ public class QuickSortTester{
 	System.out.print( array[i] + ",");
 	System.out.println( array[(array.length - 1)] + "]");
     }
-=======
->>>>>>> a726a7ea03d3c09dab48520ec17759b1d297e074
     
     public static void addTime() {
 	arr = generateArray(size);
@@ -67,10 +64,7 @@ public class QuickSortTester{
     }
 
     public static void main(String []args){
-<<<<<<< HEAD
 	
-=======
->>>>>>> a726a7ea03d3c09dab48520ec17759b1d297e074
 	int[] arr = generateArray(100);
 
 	//Warmup
@@ -78,11 +72,7 @@ public class QuickSortTester{
 	    QuickSort.qsort(arr);
 	}
 	
-<<<<<<< HEAD
-	System.out.println("size,time(nanoSeconds),timePerSize");
-=======
 	System.out.println("size,time,timePerSize");
->>>>>>> a726a7ea03d3c09dab48520ec17759b1d297e074
 	for( size = 1000; size <= 10000; size += 100 ){
 	    write();
 	}
