@@ -3,6 +3,13 @@
 //Lab01 --  What Does the Data Say?
 //2018-03-15 R
 
+/***
+	QuickSortTester runs 10 trials for each size(start = 1000, end = 10000, inc = 100)
+	and averages those times. The user must manually change between worst, average, and
+	best cases; each selection will produce its own type of array. A warm-up iteration
+	is conducted prior to true testing.
+***/
+
 public class QuickSortTester{
 
     public static int[] arr;
