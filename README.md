@@ -15,10 +15,14 @@ Roster: 00
    The program performs 10 trials for every 100 increment in array size, starting at size 1000 all the way to size 10000. For each trial, the program adds the runtime to a variable which will be averaged out (sum/10) at the end. This number is the recorded datum. For the best case, the program will run on a sorted array; for the worst case, the program will run on an array with either the minimum or maximum at the points of pivot. There will also be a control trial in which all the values are randomized.
     
 ### Results
+
+#### Best Case
 ![dataGraphBest](data/best.png)
 
+#### Worst Case
 ![dataGraphWorst](data/worst.png)
 
+#### Control/Average Case
 ![dataGraphAverage](data/average.png)
 
 ### Conclusions
