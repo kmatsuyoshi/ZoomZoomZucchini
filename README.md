@@ -6,7 +6,7 @@ Roster: 00
 ## The Quickest of the Zucchinis
    
 ### Hypothesis
-   If we pivot around the median for every increase in size of the array, then  the runtime for QuickSort will be O(nlogn). If we pivot around either the maximum or minimum for every increase in size of the array, then the runtime for QuickSort will be O(n^2). If we pivot indiscriminantly, then the runtime will also be O(nlogn).
+   If we pivot around the median for every increase in size of the array, then  the runtime for QuickSort will be O(nlogn). If we pivot around either the maximum or minimum for every increase in size of the array, then the runtime for QuickSort will be O(n^2). If we pivot indiscriminately, then the runtime will also be O(nlogn).
     
 ### Background
    In class we recently developed a QuickSort algortihm that sorts an array of ints in ascending order. In this lab we aim to measure the runtime of the QuickSort method in the best and worst case scenarios, increasing the size of the array to generate data.
