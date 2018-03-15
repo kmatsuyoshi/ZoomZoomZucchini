@@ -56,9 +56,9 @@ public class QuickSortTester{
   	}
 
     public static void addTime() {
-		//generateArray(size);
+		generateArray(size);
 		//generateSortedArray(size);
-		worstCaseGen(size);
+		//worstCaseGen(size);
 		for(int i = 0; i < 10; i++ ){ // 10 trials
 		    double before = System.nanoTime();
 		    QuickSort.qsort(arr);
@@ -75,15 +75,15 @@ public class QuickSortTester{
 
     public static void main(String []args){
 	
-		generateArray(100);
+		generateArray(10000);
 
 		//Warmup
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1000; i++) {
 		    QuickSort.qsort(arr);
 		}
 		
 		System.out.println("size,time,timePerSize");
-		for( size = 1000; size <= 10000; size += 100){
+		for( size = 10000; size <= 100000; size += 1000){
 		     write();
 		}
 	
