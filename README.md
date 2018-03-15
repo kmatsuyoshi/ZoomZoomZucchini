@@ -12,11 +12,13 @@ Roster: 00
    In class we recently developed a QuickSort algortihm that sorts an array of ints in ascending order. In this lab we aim to measure the runtime of the QuickSort method in the best and worst case scenarios, increasing the size of the array to generate data.
 
 ### Experiment Methodology
-   The program performs 10 trials for every 100 increment in array size, starting at size 1000 all the way to size 10000. For each trial, the program adds the runtime to a variable which will be averaged out (sum/10) at the end. This number is the recorded datum. For the best case, the program will run on a sorted array; for the worst case, the program will run on an array with either the minimum or maximum at the points of pivot.
+   The program performs 10 trials for every 100 increment in array size, starting at size 1000 all the way to size 10000. For each trial, the program adds the runtime to a variable which will be averaged out (sum/10) at the end. This number is the recorded datum. For the best case, the program will run on a sorted array; for the worst case, the program will run on an array with either the minimum or maximum at the points of pivot. There will also be a control trial in which all the values are randomized.
     
 ### Results
-![dataGraphBest]()
+![dataGraphBest](data/best.png)
 
-![dataGraphWorst]()
+![dataGraphWorst](data/worst.png)
+
+![dataGraphAverage](data/average.png)
 
 ### Conclusions
