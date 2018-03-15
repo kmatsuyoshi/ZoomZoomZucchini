@@ -32,10 +32,19 @@ public class QuickSortTester{
 
     public static void worstCaseGen(int n) {
     	arr = new int[n];
-		for(int j=0;j<n;j+=(n/(int)(Math.log(n) / Math.log(2))-3))
-			arr[j] = (int)(Math.random() * 20) + 1;
-		for(int i=0;i<n;i++)
-			if(arr[i] == 0){arr[i]=(int)(Math.random() * 10000) + 11;}
+	int dist = 1;
+	int i = n-2;
+	int mid = (n-1)/2;
+	arr[mid] = n-1;
+        while ( i > -1 && mid >= dist) {
+	    arr[mid - dist] = i;
+	    i--;
+	    if (i < 0) {break;}
+	    arr[mid + dist] = i;
+	    i--;
+	    dist++;
+	}
+	if (n % 2 == 0) {arr[n-1] = arr[0] - 2;}
 	}
 
     //---------------------------------------------------------------//
