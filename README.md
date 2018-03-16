@@ -26,3 +26,4 @@ Roster: 00
 ![dataGraphAverage](data/average.png)
 
 ### Conclusions
+From the data we are able to conclude that the runtime of QuickSort for the best case scenario is O(n), or linear. When running QuickSort for the worst case scenario, the runtime was O(nlogn). And for our included control case, where the values were randomized, the runtime appeared to be more linear. Hence, the location of the pivot point in the array and the nature of the array affects the runtime of the QuickSort method. 
